@@ -1,0 +1,45 @@
+<div fxLayout="row" fxLayoutAlign="center center" loading="lazy">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Nuovo concorrente</mat-card-title>
+        </mat-card-header>
+
+        <form class="example-form">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input type="text" matInput placeholder="Nome" required #name value="{{concorrente.nome}}">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input type="text" matInput placeholder="Cognome" required #surename value="{{concorrente.cognome}}">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input type="number" matInput placeholder="Altezza" required #height value="{{concorrente.altezza}}">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input type="number" matInput placeholder="Punteggio" required #points value="{{concorrente.punteggio}}">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Sesso</mat-label>
+                    <select matNativeControl required #sex value="{{concorrente.sesso}}">
+                        <option value="male">
+                            Maschio
+                        </option>
+
+                        <option value="female">
+                            Femmina
+                        </option>
+                    </select>
+                    <!-- <input type="text" matInput placeholder="Sesso" required #sex> -->
+                </mat-form-field>
+            </mat-card-content>
+
+            <div *ngIf="isModifing == true; else elseBlock"><button mat-stroked-button color="accent" type="reset" class="btn-block" (click)="updateConcorrente(concorrente.id, name.value, surename.value, height.value, points.value, sex.value)">Salva modifiche</button></div>
+            <ng-template #elseBlock><button mat-stroked-button color="accent" type="reset" class="btn-block" (click)="addConcorrente(name.value, surename.value, height.value, points.value, sex.value)">Aggiungi</button></ng-template>
+            
+        </form>
+    </mat-card>
+</div>

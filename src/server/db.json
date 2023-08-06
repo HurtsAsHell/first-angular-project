@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "username": "manuel",
+      "password": "1234"
+    }
+  ],
+  "concorrenti": [
+    {
+      "id": 1,
+      "nome": "Fabrizio",
+      "cognome": "D'onofrio",
+      "altezza": "185",
+      "punteggio": 50,
+      "sesso": "male"
+    },
+    {
+      "id": 2,
+      "nome": "Manuel",
+      "cognome": "De Angelis",
+      "altezza": "185",
+      "punteggio": 100,
+      "sesso": "male"
+    },
+    {
+      "nome": "Maria",
+      "cognome": "Cineglosso",
+      "altezza": 154,
+      "punteggio": 100,
+      "sesso": "female",
+      "id": 3
+    },
+    {
+      "nome": "Hannibal",
+      "cognome": "Lecter",
+      "altezza": 200,
+      "punteggio": 200,
+      "sesso": "male",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nome": "Cinzia",
+      "cognome": "D'Angelo",
+      "altezza": "178",
+      "punteggio": 100,
+      "sesso": "female"
+    },
+    {
+      "nome": "Ciccio",
+      "cognome": "Pasticcio",
+      "altezza": 0,
+      "punteggio": 0,
+      "sesso": "male",
+      "id": 6
+    },
+    {
+      "nome": "a",
+      "cognome": "a",
+      "altezza": 0,
+      "punteggio": 0,
+      "sesso": "0",
+      "id": 7
+    }
+  ]
+}
